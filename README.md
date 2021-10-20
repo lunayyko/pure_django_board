@@ -62,7 +62,7 @@ python manage.py runserver
 
   /post | `POST`
 
-* **요청 예시:**
+* **요청 예시:**  
     **Content:**
     ```json
     {
@@ -76,7 +76,7 @@ python manage.py runserver
     **Content:**
     ```json
     {
-    "message": "SUCCESS"
+        "message": "SUCCESS"
     }
     ```
 
@@ -89,7 +89,7 @@ python manage.py runserver
 
   /post/{post_id} | `PATCH`
 
-* **요청 예시:**
+* **요청 예시:**  
     **Content:**
     ```json
     {
@@ -107,7 +107,7 @@ python manage.py runserver
     }
     ```
 
-**3. 게시글 삭제**
+**4. 게시글 삭제**
 ---
 본인이 쓴 게시글을 수정한다
 
