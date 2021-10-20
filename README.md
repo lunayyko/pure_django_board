@@ -16,7 +16,7 @@ python manage.py runserver
 
 (get)   | /post           |  게시글 리스트 출력 | header에 토큰, body에 "text" : string
 (post)  | /post           |  새 글 등록       | header에 토큰, body에 "text" : string
-(patch) | /post/{post_id} |  글 수정
+(patch) | /post/{post_id} |  글 수정  
 (delete)| /post/{post_id} |  글 삭제
 
 
