@@ -28,30 +28,30 @@ python manage.py runserver
     **Content:**
     ```json
     {
-    "page": 1,
-    "results": [
-        [
-            {
-                "post_id": 1,
-                "user_id": 1,
-                "text": "우린 같은걸 보면서~ 말을 건네지 않아도",
-                "created_at": "2021-10-20T04:29:43.401Z"
-            },
-            {
-                "post_id": 2,
-                "user_id": 1,
-                "text": "너와 걸을때면 난 내가 사랑받는걸 느껴",
-                "created_at": "2021-10-20T04:32:43.017Z"
-            },
-            {
-                "post_id": 3,
-                "user_id": 1,
-                "text": "너와 발을 맞출때 이렇게 기분 좋은걸",
-                "created_at": "2021-10-20T04:33:06.862Z"
-            }
+        "page": 1,
+        "results": [
+            [
+                {
+                    "post_id": 1,
+                    "user_id": 1,
+                    "text": "우린 같은걸 보면서~ 말을 건네지 않아도",
+                    "created_at": "2021-10-20T04:29:43.401Z"
+                },
+                {
+                    "post_id": 2,
+                    "user_id": 1,
+                    "text": "너와 걸을때면 난 내가 사랑받는걸 느껴",
+                    "created_at": "2021-10-20T04:32:43.017Z"
+                },
+                {
+                    "post_id": 3,
+                    "user_id": 1,
+                    "text": "너와 발을 맞출때 이렇게 기분 좋은걸",
+                    "created_at": "2021-10-20T04:33:06.862Z"
+                }
+            ]
         ]
-    ]
-}
+    }
     ```
 
 **2. 게시글 등록**
@@ -71,13 +71,14 @@ python manage.py runserver
 ```
 
 * **응답 예시:**
-* **Code:** 200 <br />
+
+  * **Code:** 200 <br />
     **Content:**
-```json
-{
+    ```json
+    {
     "message": "SUCCESS"
-}
-```
+    }
+    ```
 
 
 **3. 게시글 수정**
@@ -97,13 +98,14 @@ python manage.py runserver
 ```
 
 * **응답 예시:**
-* **Code:** 200 <br />
+
+  * **Code:** 200 <br />
     **Content:**
-```json
-{
+    ```json
+    {
     "message": "SUCCESS"
-}
-```
+    }
+    ```
 
 **3. 게시글 삭제**
 ---
@@ -114,10 +116,11 @@ python manage.py runserver
   /post/{post_id} | `DELETE`
 
 * **응답 예시:**
-* **Code:** 200 <br />
+
+  * **Code:** 200 <br />
     **Content:**
-```json
-{
+    ```json
+    {
     "message": "SUCCESS"
-}
-```
+    }
+    ```
