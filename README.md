@@ -63,12 +63,12 @@ python manage.py runserver
   /post | `POST`
 
 * **요청 예시:**
-
-```json
-{
-	"text": "무궁화 꽃이 피었습니다"
-}
-```
+    **Content:**
+    ```json
+    {
+        "text": "무궁화 꽃이 피었습니다"
+    }
+    ```
 
 * **응답 예시:**
 
@@ -90,12 +90,12 @@ python manage.py runserver
   /post/{post_id} | `PATCH`
 
 * **요청 예시:**
-
-```json
-{
-	"text": "무궁화 꽃이 피었습니까?"
-}
-```
+    **Content:**
+    ```json
+    {
+        "text": "무궁화 꽃이 피었습니까?"
+    }
+    ```
 
 * **응답 예시:**
 
@@ -103,7 +103,7 @@ python manage.py runserver
     **Content:**
     ```json
     {
-    "message": "SUCCESS"
+        "message": "SUCCESS"
     }
     ```
 
@@ -121,6 +121,6 @@ python manage.py runserver
     **Content:**
     ```json
     {
-    "message": "SUCCESS"
+        "message": "SUCCESS"
     }
     ```
