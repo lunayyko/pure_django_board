@@ -1,4 +1,4 @@
-# wanted x wecode
+# wanted x wecode 게시판 CRUD
 
 ## 구현한 방법과 이유에 대한 간략한 내용
 
