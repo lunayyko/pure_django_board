@@ -14,10 +14,49 @@ python manage.py runserver
 해당 디렉토리에서 위의 명령어를 실행하면 localhost:8000에서 실행됩니다. 
 ## api 명세(request/response 서술 필요)
 
-(get)   | /post           |  게시글 리스트 출력 | header에 토큰, body에 "text" : string
-(post)  | /post           |  새 글 등록       | header에 토큰, body에 "text" : string
-(patch) | /post/{post_id} |  글 수정  
-(delete)| /post/{post_id} |  글 삭제
+**게시글 리스트 출력**
+----
+ 모든 게시글을 한 페이지당 3개씩 보여준다
+
+* **URL**
+
+  /post
+
+* **Method:**
+
+  `GET`
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:**
+    ```json
+    {
+    "page": 1,
+    "results": [
+        [
+            {
+                "post_id": 1,
+                "user_id": 1,
+                "text": "우린 같은걸 보면서~ 말을 건네지 않아도",
+                "created_at": "2021-10-20T04:29:43.401Z"
+            },
+            {
+                "post_id": 2,
+                "user_id": 1,
+                "text": "너와 걸을때면 난 내가 사랑받는걸 느껴",
+                "created_at": "2021-10-20T04:32:43.017Z"
+            },
+            {
+                "post_id": 3,
+                "user_id": 1,
+                "text": "너와 발을 맞출때 이렇게 기분 좋은걸",
+                "created_at": "2021-10-20T04:33:06.862Z"
+            }
+        ]
+    ]
+}
+    ```
 
 
 
