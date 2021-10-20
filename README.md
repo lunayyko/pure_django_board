@@ -71,7 +71,8 @@ python manage.py runserver
 ```
 
 * **응답 예시:**
-
+* **Code:** 200 <br />
+    **Content:**
 ```json
 {
     "message": "SUCCESS"
@@ -96,7 +97,8 @@ python manage.py runserver
 ```
 
 * **응답 예시:**
-
+* **Code:** 200 <br />
+    **Content:**
 ```json
 {
     "message": "SUCCESS"
@@ -112,7 +114,8 @@ python manage.py runserver
   /post/{post_id} | `DELETE`
 
 * **응답 예시:**
-
+* **Code:** 200 <br />
+    **Content:**
 ```json
 {
     "message": "SUCCESS"
