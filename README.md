@@ -12,21 +12,17 @@
 python manage.py runserver
 ```
 해당 디렉토리에서 위의 명령어를 실행하면 localhost:8000에서 실행됩니다. 
-## api 명세(request/response 서술 필요)
+## api 명세
 
-**게시글 리스트 출력**
+**1. 게시글 리스트 출력**
 ----
  모든 게시글을 한 페이지당 3개씩 보여준다
 
-* **URL**
+* **URL, Method**
 
-  /post
+  /post | `GET`
 
-* **Method:**
-
-  `GET`
-
-* **Success Response:**
+* **응답 예시:**
 
   * **Code:** 200 <br />
     **Content:**
@@ -58,6 +54,67 @@ python manage.py runserver
 }
     ```
 
+**2. 게시글 등록**
+---
+ 새 게시글을 등록한다 
+
+* **URL, Method**
+
+  /post | `POST`
+
+* **요청 예시:**
+
+```json
+{
+	"text": "무궁화 꽃이 피었습니다"
+}
+```
+
+* **응답 예시:**
+
+```json
+{
+    "message": "SUCCESS"
+}
+```
 
 
+**3. 게시글 수정**
+---
+본인이 쓴 게시글을 수정한다
 
+* **URL, Method**
+
+  /post/{post_id} | `PATCH`
+
+* **요청 예시:**
+
+```json
+{
+	"text": "무궁화 꽃이 피었습니까?"
+}
+```
+
+* **응답 예시:**
+
+```json
+{
+    "message": "SUCCESS"
+}
+```
+
+**3. 게시글 삭제**
+---
+본인이 쓴 게시글을 수정한다
+
+* **URL, Method**
+
+  /post/{post_id} | `DELETE`
+
+* **응답 예시:**
+
+```json
+{
+    "message": "SUCCESS"
+}
+```
