@@ -110,8 +110,9 @@ python manage.py runserver
     }
     ```
 
-###4. 게시글 삭제
+### 4. 게시글 삭제
 ---
+
 본인이 쓴 게시글을 수정한다
 
 * **URL, Method**
