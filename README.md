@@ -59,6 +59,8 @@ python manage.py runserver
 ```
 ## API 명세
 
+[POSTMAN API 문서](https://documenter.getpostman.com/view/16843815/UVXhovkJ)
+
 ### 1. 게시글 리스트 출력
 ----
  모든 게시글을 한 페이지당 3개씩 보여준다

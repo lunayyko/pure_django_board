@@ -7,9 +7,11 @@ class User(models.Model):
 
     class Meta:
         db_table = 'users'
+
 class Post(models.Model): 
     user        = models.ForeignKey(User, on_delete=models.CASCADE, db_column='user_id')
-    text        = models.CharField(max_length=300)
+    title       = models.CharField(max_length=40, null=True)
+    desc        = models.CharField(max_length=300)
     created_at  = models.DateTimeField(auto_now_add=True)
     
     class Meta:
