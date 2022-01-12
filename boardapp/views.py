@@ -13,6 +13,7 @@ from my_settings           import SECRET_KEY
 
 from boardapp.decorator      import login_decorator
 
+
 class Post(View):
     @login_decorator
     def post(self, request):
@@ -48,7 +49,7 @@ class Post(View):
 
             results.append([{
                         "id"         : post.id,
-                        "writer"     : post.user_id,#글 객체의 유저아이디
+                        "writer"     : post.user_id,
                         "title"      : post.title,
                         "desc"       : post.desc,
                         "created_at" : post.created_at.date(),
@@ -56,6 +57,22 @@ class Post(View):
             return JsonResponse({"page" : page, "results": results}, status=200)
 
 class PostModify(View):
+    def get(self, request, post_id):
+        try:
+            post = PostModel.objects.get(id=post_id)
+
+            result = {
+                        "id"         : post.id,
+                        "writer"     : post.user_id,
+                        "title"      : post.title,
+                        "desc"       : post.desc,
+                        "created_at" : post.created_at.date()
+                        }
+
+            return JsonResponse({"result" : result}, status=200)
+        except ObjectDoesNotExist:
+            return JsonResponse({"message" : "NOT_EXIST"}, status=400)
+
     @login_decorator
     def patch(self,request, post_id):
         try:
