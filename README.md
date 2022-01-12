@@ -11,14 +11,14 @@
 - 유닛테스트
 ## 실행방법
 
-1. 하는 경로에 해당 프로젝트를 깃 클론 받는다
+1. 원하는 경로에 해당 프로젝트를 깃 클론 받는다
 ```terminal
 git clone https://github.com/lunayyko/pure_django_board.git
 ```
 
 2. manage.py가 있는 디렉토리 상에 mysql 데이터베이스 내용을 포함한 my_settings.py파일을 추가한다.
 ```python
-SECRET_KEY = '랜덤한 특정 문자열'
+SECRET_KEY = '랜덤한특정문자열'
 
 DATABASES = {
     'default' : {
