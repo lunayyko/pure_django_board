@@ -10,7 +10,7 @@ class PostTest(TestCase):
     def setUp(self):
         User.objects.create(
             id       = 1,
-            email    = 'wecode@wanted.com',
+            email    = 'wecode@boardapp.com',
             password = 'wecode12#',
         )
         post = Post.objects.create(

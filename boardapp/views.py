@@ -10,7 +10,7 @@ from .models               import Post as PostModel
 
 from my_settings           import SECRET_KEY
 
-from wanted.decorator      import login_decorator
+from boardapp.decorator      import login_decorator
 
 class Post(View):
     @login_decorator

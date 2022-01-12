@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class WantedConfig(AppConfig):
+class boardappConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'wanted'
+    name = 'boardapp'
