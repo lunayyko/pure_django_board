@@ -53,6 +53,12 @@ conda activate cloudnine
 pip install -r requirements.txt 
 ```
 
+5. 마이그레이션을 실행한다.
+```python
+python manage.py makemigrations
+python manage.py migrate
+```
+
 5. 서버를 실행한다(파이썬이 설치 필요)
 ```python
 python manage.py runserver
